@@ -1,0 +1,15 @@
+# Streamlit theme for the E-Learning MAS dashboard.
+# A single cohesive dark palette with one indigo accent — replaces the
+# default "rainbow gradient" look. Read automatically when you run
+# `streamlit run dashboard/app.py` from the project root.
+
+[theme]
+base = "dark"
+primaryColor = "#7B8CFF"            # indigo accent
+backgroundColor = "#0E1117"         # app background
+secondaryBackgroundColor = "#171C28" # cards / sidebar
+textColor = "#E6E9EF"
+font = "sans serif"
+
+[server]
+headless = true

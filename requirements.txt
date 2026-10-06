@@ -1,0 +1,42 @@
+# ============================================
+# E-Learning Multi-Agent System — Requirements
+# Pinned to the libraries actually imported by the code.
+# ============================================
+
+# ---- LLM access (Azure OpenAI / GPT-4o + embeddings) ----
+openai>=1.40.0
+python-dotenv>=1.0.0
+
+# ---- Data & classical ML ----
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0          # K-Means, TruncatedSVD (CF), TF-IDF (CB)
+
+# ---- Explainable AI ----
+shap>=0.44.0                 # SHAP explanations
+lime>=0.2.0.1                # LIME explanations
+dice-ml>=0.11                # DiCE counterfactuals
+
+# ---- Path planning ----
+networkx>=3.2                # graph + A* + topological sort
+
+# ---- Orchestration ----
+langgraph>=0.0.40            # LangGraph workflow (orchestrator scaffold)
+
+# ---- Generation-quality metrics ----
+bert-score>=0.3.13
+rouge-score>=0.1.2
+
+# ---- Dashboard (Streamlit UI) ----
+streamlit>=1.32.0
+plotly>=5.18.0
+matplotlib>=3.8.0
+
+# ============================================
+# Optional / planned — NOT yet wired into the code.
+# Uncomment if/when you implement these (see README "Roadmap").
+# ============================================
+# pyautogen>=0.2.35          # AutoGen multi-agent conversations
+# chromadb>=0.4.22           # vector store for RAG
+# langchain>=0.1.0           # RAG pipeline
+# langchain-openai>=0.0.5

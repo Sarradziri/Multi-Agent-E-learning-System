@@ -1,0 +1,44 @@
+# ---- Secrets ----
+.env
+*.key
+*.pem
+.streamlit/secrets.toml
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---- Virtual environments ----
+venv/
+.venv/
+env/
+ENV/
+
+# ---- Data (download separately, see README) ----
+data/*
+*.csv
+!data/.gitkeep
+
+# ---- Models / artifacts ----
+*.pkl
+*.joblib
+*.pt
+*.h5
+
+# ---- Editor / OS ----
+.vscode/
+*.code-workspace
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Logs ----
+*.log
